@@ -1,0 +1,30 @@
+.pricingcon{
+    text-align: center;
+    /* box-shadow: 20px 20px 20px 20px black; */
+    background-color: white;
+    /* border: 0.2px solid royalblue; */
+}
+
+.pricingcon *{
+    border: none;
+    outline: none;
+}
+
+.pricingbtn{
+    margin-top: 20px;
+    border: 0.2px solid royalblue;
+    padding: 10px;
+}
+
+.list-group-item{
+    padding-bottom: 0;
+}
+
+.list-group{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.period{
+    font-size: 20px;
+}

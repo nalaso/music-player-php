@@ -1,0 +1,39 @@
+<?php
+// session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./assets/styles/login.css">
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+        <form class="register-form" name="myform" onsubmit="return validateform()">
+                <input type="text" name="rname" placeholder="name" />
+                <input type="password" name="rpassword" placeholder="password" />
+                <input type="text" placeholder="email address" />
+                <button type="submit" >Create</button>
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" name="lname" placeholder="username" />
+                <input type="password" name="lpassword" placeholder="password" />
+                <button type="submit">Login</button>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" ></script>
+
+    <script>
+       $('.message a').click(function () {
+            $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+    </script>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
